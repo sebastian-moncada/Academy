@@ -1,0 +1,43 @@
+body {
+    background: url('https://wallpapercave.com/wp/sZ2daAY.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -7em;
+    background-color: black;
+    color:silver;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header h1 {
+    padding-left: 1em; 
+}
+
+h3, h5, h6{
+  margin:5px
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.styleContainer section {
+    margin-top: 10%;
+    padding:.7em;
+    background-color: rgb(203, 209, 203,.3) ;
+    border-radius: 34px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imgTitle{
+    width:35%;
+    align-self: flex-end
+}
