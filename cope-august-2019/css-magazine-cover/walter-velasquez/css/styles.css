@@ -1,0 +1,63 @@
+#container {
+	display:block;
+	margin:0 auto;
+	width:800px;
+	padding:30px 0;
+	height: 1000px;
+	color: black;
+	font-family: Verdana;
+	background-image: url(../img/omar.png);
+	background-repeat: no-repeat;
+	background-position-x: right;
+}
+
+.title, .footer {
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+}
+.title > * {
+	margin: 0;
+}
+h1 {
+	font-size: 100px;
+	text-transform: uppercase;
+	font-family: Impact, Charcoal, sans-serif;
+}
+h2 {
+	font-size: 30px;
+}
+
+h3, h4 {
+	text-transform: uppercase;
+}
+
+.highlights {
+	display: flex;
+	justify-content: space-between;
+}
+
+.right, .left {
+	width: 40%;
+	margin: 3%;
+}
+
+.highlight {
+	margin: 15%;
+}
+
+.footer {
+	background-color: #FF9900;
+	width: 25%;
+	margin: 5%;
+	padding: 0px 10px 20px 10px
+}
+
+footer {
+	font-style: italic;
+	justify-content: center;
+	text-align: end;
+}
