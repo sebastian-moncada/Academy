@@ -10,18 +10,18 @@ function* paperFold() {
     yield sec;
 
     while( run){
-        let arraySec=[];
+        let arraySec="";
         lastLetter="1";
         for(i=0;i<sec.length;i++){
-            arraySec.push(lastLetter);
-            arraySec.push(sec[i]);
+            arraySec=arraySec+lastLetter;
+            arraySec=arraySec+sec[i];
 
             if(lastLetter==="1")
                 lastLetter="0";
             else
                 lastLetter="1";
         }
-        sec= arraySec.toString().replace(/[,]/g,'');
+        sec= arraySec;
         yield sec;
     }
 }
