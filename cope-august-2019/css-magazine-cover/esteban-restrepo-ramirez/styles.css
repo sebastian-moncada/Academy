@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: titleCoverFont;
+  src: url(assets/RacingSansOne-Regular.ttf);
+}
+
+html,
+body {
+  height: 80%;
+}
+
+body {
+  display: flex;
+  overflow:hidden;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cover-area:not(span) {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	position: relative;
+	width: 60vmax;
+	max-width: 100vw;
+	height: 98vmin;
+	max-height: 77vw;
+	background: url('assets/cover.jpg') center center no-repeat;
+	background-size: cover;
+	color: white;
+	overflow: hidden; 
+	isolation: isolate;
+}
+
+.box--head-wrapper {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+.box--footer-wrapper {
+  align-self: flex-end;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  flex-direction:column;
+  width: 100%;
+  height:48vmin;
+}
+
+.circle {
+  height: 10vmin;
+  width: 10vmin;
+  background-color: #ffe642;
+  border-radius: 50%;
+  transition: transform .3s ease-in-out;  
+  will-change: transform;
+  position:relative;
+  font-size: 3vmax;
+  font-family:titleCoverFont;
+  color:#3b3b3b;
+  position:relative;
+}
+
+.circle:before {
+    content: '';
+    display: block;
+    padding-top: 200%;
+  }
+  
+.circle:after {
+
+    position: absolute;
+    content: '15';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.child {
+  display:flex;
+  font-size:1.7vmin;
+  font-weight: bold;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  position:relative;
+}
+
+.child.head{
+	padding:2vmin 3vmin;
+	width:50%;
+	justify-content:flex-start;
+	font-weight:blod;
+}
+
+.child.child--footer{
+	margin:1vmin 3vmin;
+}
+
+.child.child--footer:nth-child(1){
+	display:flex;
+	align-items:center;
+	padding-top: 1vmin;
+}
+
+.child.child--footer:nth-child(1) div:nth-child(2){
+	margin-left:2vmin;
+	width:18vmin;
+	font-size:2vmin;
+}
+
+.child.child--footer:nth-child(2){
+	font-size:7vmin;
+	width:50vmin;
+	padding-top: 10vmin;
+}
+
+.child.head:nth-child(2){
+	justify-content:flex-end;
+}
+.child.title {
+	display:flex;
+	align-items:flex-start;
+    justify-content: center;
+    text-align: center;
+    font-size: 7vmin;
+    font-family: titleCoverFont;
+    width: 98vmin;
+    max-width: 83vw;
+    height: 13vmin;
+}
+
+.child h1{
+	margin:0;
+}
+
+.child.snippet{
+	font-size:3vmin;
+}
+
+.yellow{
+	color:#ffe642;
+}
