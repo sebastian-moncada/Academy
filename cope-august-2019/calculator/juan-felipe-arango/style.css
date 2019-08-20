@@ -1,0 +1,41 @@
+.container {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+}
+.operations{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.operation {
+    width: 33.333333%;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+}
+.box1{
+    background: #1abc9c;
+}
+.box2{
+    background: #2ecc71;
+}
+.box3{
+    background: #3498db;
+}
+.boxclear {
+    background: #7f8c8d;
+}
+.boxplus {
+    background: #7f8c8d;
+}
+
+.input{
+    justify-content: space-around;
+    margin: 15px;
+}
+
+#result {
+    border: mistyrose 10px solid;
+}
