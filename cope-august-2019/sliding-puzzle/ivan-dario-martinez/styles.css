@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#mainContent {
+    width: 98%;
+}
+
+.generalBox {
+    text-align: center;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableContainer {
+    display: table;
+}
+
+.rowContainer {
+    display: table-row;
+}
+
+.columnContainer {
+    padding: 5px;
+    display: table-cell;
+    border-style: solid;
+    border-width: 1px;
+    width: 130px;
+}
+
+.cell {
+    padding: 20%;
+    background-color: #9e9eb9;
+    color: white;
+}
+
+#cellxx {
+    padding: 20%;
+    background-color: black;
+    color: white;
+}
