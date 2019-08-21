@@ -5,6 +5,16 @@ body{
     font-family: 'Times New Roman', serif;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .red {
     color: #ed1b24;
 }
@@ -43,11 +53,6 @@ body{
     
 }
 
-.headlines-space {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
 .headlines {
     color: white;
     display: flex;
