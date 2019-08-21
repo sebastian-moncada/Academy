@@ -1,0 +1,13 @@
+body {
+  padding: 2em;
+}
+h2 {
+  font-family: 'Press Start 2P', cursive;
+}
+.instructions {
+  font-style: italic;
+}
+.expression {
+  background-color: #f0f7f7;
+  padding: 0.3em;
+}
