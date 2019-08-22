@@ -1,0 +1,124 @@
+@font-face {
+font-family:ARCADECLASSIC;
+src: url(ARCADECLASSIC.ttf);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+
+}
+main {
+	display: flex;
+	justify-content: center;
+	background-color: #a3672b; 
+	border: 3px solid gray; 
+}
+#box {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px;
+	padding: 10px;   
+	width: 500px;
+	height: 500px;
+	border-radius: 10px;
+	border: 3px solid white;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+	padding: 5px; 
+	background-color: #250487; 
+	border-radius: 3px 3px 3px 3px;
+	border: 1px solid #FFFFFF;  
+}
+
+.nav-section{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+h2{
+	font-family: ARCADECLASSIC;
+	font-size: 42px;
+	color:white;
+	text-align: center;
+}
+
+p{
+	font-family: ARCADECLASSIC;
+	text-align: center;
+	font-size: 20px;
+	width: 120px;
+	color:white;
+}
+
+input[type=button] {
+  height: 125px;
+  width: 120px;
+  border-radius: 3px;
+  border: 1px solid #06364C;
+  background-color: #2E9944;
+  font-family: ARCADECLASSIC;
+  font-size: 3rem;
+  color: white;
+  transition: 0.1s;
+}
+
+#start{
+	height: 50px;
+ 	width: 200px;
+ 	font-size: 30px;
+ 	background-color: white;
+ 	color:black;
+}
+input[type=button]:hover{
+	transform: scale(1.04);
+}
+
+input[value=""]{
+	background-color: #a3672b;
+	border: 0px ;
+}
+input[value=""]:hover{
+	transform: scale(1);
+}
+
+#box-alert{
+	width: 500px;
+	overflow: hidden;
+	background: #f1f1f1;
+	box-shadow: 0 0 20px black;
+	border-radius: 8px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index:9999;
+	padding: 10px;
+	text-align: center;
+	font-family: ARCADECLASSIC;
+	display: none;
+
+}
+#box-alert h2{
+	font-size: 3rem;
+	color:#333;
+}
+
+.close{
+	font-size: 18px;
+	color:white;
+	padding: 10px 20px;
+	cursor:pointer;
+	background: #3498db;
+	display: inline-block;
+	border-radius: 4px;
+}
