@@ -19,7 +19,7 @@ https://www.codewars.com/kata/5d26721d48430e0016914faa
 
 function* paperFold() {
     let str = ["1"];
-    for(let i=0; i<10000; i++) {
+    for( let i = 0; i < 1000000; i++ ) {
         let newstr = str[i] + 
             "1" + 
             [...str[i]].reduce((prev,next)=>next+prev)
