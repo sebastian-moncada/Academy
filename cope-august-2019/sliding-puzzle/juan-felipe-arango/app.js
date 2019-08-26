@@ -24,9 +24,14 @@ class Puzzle {
         this.positions[targetRow][targetColumn] = tempPosition
         
         //update dom
-        const tempContent = document.querySelector(`[data-row="${targetRow}"][data-column="${targetColumn}"]`).textContent
-        document.querySelector(`[data-row="${targetRow}"][data-column="${targetColumn}"]`).textContent = element.textContent
+        const selector = this.getBoxSelector(targetRow, targetColumn)
+        const tempContent = selector.textContent
+        this.updateContent(selector, element.textContent)
         element.textContent = tempContent
+    }
+
+    updateContent(selector, newValue) {
+        selector.textContent = newValue
     }
 
     move(event){
@@ -63,7 +68,12 @@ class Puzzle {
 
     }
     getBoxValue(row, column) {
-        return document.querySelector(`[data-row="${row}"][data-column="${column}"]`).textContent
+        const selector = this.getBoxSelector(row, column)
+        return selector.textContent
+    }
+
+    getBoxSelector(row, column) {
+        return document.querySelector(`[data-row="${row}"][data-column="${column}"]`)
     }
 
 }
