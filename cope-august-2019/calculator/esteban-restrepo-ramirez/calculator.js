@@ -54,7 +54,7 @@ Array.from(operatorClass).forEach(function(element) {
 		operators.push(operator);
 		document.getElementById('result').value += operator;
 		
-		lasTypeTyped = 1;
+		lastButtonTyped = 1;
 	});
 });
 
