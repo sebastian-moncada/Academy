@@ -16,6 +16,7 @@ class Puzzle {
             const randomColumn = Math.floor(Math.random()*(4))
             this.swap(el, randomRow, randomColumn)
         })
+        return
     }
     swap(element, targetRow, targetColumn) {
         // update positions array
@@ -28,10 +29,12 @@ class Puzzle {
         const tempContent = selector.textContent
         this.updateContent(selector, element.textContent)
         element.textContent = tempContent
+        return
     }
 
     updateContent(selector, newValue) {
         selector.textContent = newValue
+        return
     }
 
     move(event){
@@ -41,6 +44,7 @@ class Puzzle {
         if (emptyBlock) {
             this.swap(event.target, emptyBlock[0], emptyBlock[1])
         }
+        return
 
     }
     checkMove(row, column) {
